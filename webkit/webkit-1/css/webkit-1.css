@@ -1,0 +1,93 @@
+
+@charset "utf-8";
+body{
+	background: url(../img/bj.png) #171B27 no-repeat center bottom;
+	line-height: 1.8;
+	color: #AAAAAA;
+	font-size: 1.4rem;
+	font-family: font-family: 'Hiragino Sans GB','Microsoft Yahei',"WenQuanYi Micro Hei",SimSun,Tahoma,Arial,Helvetica,STHeiti;
+}
+button,dl,dt,ul,li,p{
+	padding: 0;
+	border: none;
+	outline: none;
+	list-style: none;
+}
+.clear{
+	clear: both;
+}
+a{
+	color: #AAAAAA;
+}
+a:hover{
+	color: #0070A8;
+}
+
+/*public*/
+.am-container{
+	max-width: 1200px;
+	padding: 0 0.8rem;
+}
+
+
+/*head*/
+.head{
+	overflow: hidden;
+}
+.head .am-topbar-btn{}
+.head .am-nav >li.am-active >a,
+.head .am-nav >li.am-active >a:focus,
+.head .am-nav >li.am-active >a:hover{
+	background-color: #00c0ff;
+}
+
+.head .am-topbar{}
+.head .am-topbar-nav > li.am-active > a,
+.head .am-topbar-nav > li.am-active > a:focus,
+.head .am-topbar-nav > li.am-active > a:hover{
+	color: #fff; 
+	background: #00c0ff;
+}
+
+.head .am-nav >li > a:focus,
+.head .am-nav >li > a:hover{
+	background: none; 
+	color: #fff;
+	border-bottom:2px solid #00c0ff;
+}
+.head .am-topbar-nav > li > a:after{
+	display:none;
+	}
+.head .am-topbar-nav > li > a{
+	font-size: 14px; 
+	padding: 0 20px; 
+	height: 60px; 
+	line-height: 60px;
+	}
+.head .am-topbar-collapse{
+	padding: 0;
+	float: right;
+	}
+.head .app-logo{
+	height: 60px;
+	line-height: 60px;
+	padding: 0;
+	float: left;
+	}
+.head .app-logo a{
+	padding-right: 38px; 
+	border-right: 1px solid #414345; 
+	display: inline-block; 
+	height: 28px; 
+	vertical-align: middle; 
+	margin-right: 20px;
+	}
+.head .app-logo img{
+	width: 150px; 
+	height: 28px; 
+	display: block; 
+	vertical-align: middle;
+	}
+.head .app-ov{
+	overflow: hidden;
+	}

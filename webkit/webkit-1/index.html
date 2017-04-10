@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="js cssanimations">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>第一个响应式网站</title>
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-title" content="第一个响应式网站" />
+		<link rel="stylesheet" type="image/png" href="./img/logo.png" />
+		<link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/webkit-1.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/example.css" />
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="am-with-topbar-fixed-top">
+		<!--[if lte IE 8 ]>
+		<div class="am-alert am-alert-danger ie-warning" data-am-alert>
+		  <button type="button" class="am-close">&times;</button>
+		  <div class="am-container">
+		    360 安全卫士提醒：你的浏览器太古董了，赶紧换一个吧！<a
+		    href="http://browsehappy.com/" target="_blank">速速点击换一个</a>！</div></div>
+		<![endif]-->
+		<div class="head">
+			<div class="am-topbar-fixed-top am-topbar">
+				<!--导航-->
+				<div class="am-container">
+					<div class="am-topbar-brand app-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="logo" />
+						</a>
+					</div>
+					<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-show-sm-only" data-am-collapse="{target:'#doc-topbar-collapse'}">
+						<span id="" class="am-sr-only">导航切换</span>
+						<span id="" class="am-icon-bars"></span>
+					</button>
+					<div class="am-topbar-collapse am-fr am-collapse am-in" id="doc-topbar-collapse">
+						<ul class="am-nav am-nav-pills am-topbar-nav">
+							<li class="am-active"><a href="/">首页</a></li>
+
+							<li><a href="#"> 案例 <span></span> </a></li>
+
+							<li><a href="#"> 服务 <span></span> </a></li>
+
+							<li><a href="#"> 资讯 <span></span> </a></li>
+
+							<li><a href="#"> 关于 <span></span> </a></li>
+
+							<li><a href="#"> 联系 <span></span> </a></li>
+
+							<li class="search am-hide-md-only">
+								<form class="am-form" action="/plus/search.php">
+									<div class="am-form-icon am-form-feedback">
+										<input name="q" type="text" class="am-form-field" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}">
+										<button class="am-icon-search " type="submit"></button>
+									</div>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--轮播图-->
+		<div class="am-slider am-slider-default index_banner" data-am-flexslider>
+			<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+				<ul class="am-slides">
+					<li>
+						<img class="am-slider-images clone" src="img/banner.jpg" style="">
+						<!--图片描述-->
+						<div class="am-container am-slider-desc">
+							<dov class="am-slider-content">
+								<h2 class="am-slider-title am-animation-slide-left" data-am-scrollspy="{animation: 'slide-left'}">工匠精神，创造更好作品</h2>
+							</dov>
+						</div>
+					</li>
+					<li>
+						<img class="am-slider-images clone" src="img/banner2.jpg">
+						<div class="am-container am-slider-desc">
+							<dov class="am-slider-content">
+								<h2 class="am-slider-title am-animation-slide-left" data-am-scrollspy="{animation: 'slide-left'}">工匠精神，创造更好作品</h2>
+							</dov>
+						</div>
+					</li>
+					<li>
+						<img class="am-slider-images clone" src="img/banner3.jpg">
+						<div class="am-container am-slider-desc">
+							<dov class="am-slider-content">
+								<h2 class="am-slider-title am-animation-slide-left" data-am-scrollspy="{animation: 'slide-left'}">工匠精神，创造更好作品</h2>
+							</dov>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--客服-->
+		<div class="kf">
+			<div class="am-hide-sm-only" id="sticky">
+				<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2689543658&amp;site=qq&amp;menu=yes" class="sticky-qq " target="_blank">
+					<span class="am-icon-qq"></span>
+					<span>QQ客服</span>
+				</a>
+				<div class="clear" style="height:6px; overflow:hidden"></div>
+				<a href="tel://15970657665" class="sticky-phone " target="_blank">
+					<span class="am-icon-phone"></span>
+					<span>15970657665</span>
+				</a>
+				<div class="clear" style="height:6px; overflow:hidden"></div>
+				<a href="" class="qrc am-hide-sm-only">
+					<span class="am-icon-qrcode"></span>
+					<div class="clear"></div>
+					<div class="wx"><img src="img/weixin.jpg" alt="微信二维码"></div>
+				</a>
+				<button data-am-smooth-scroll="" class="am-btn am-hide-sm-only">
+                    <span class="am-icon-caret-up"></span>
+                     TOP 
+              </button>
+			</div>
+		</div>
+		<script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.ie8polyfill.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
