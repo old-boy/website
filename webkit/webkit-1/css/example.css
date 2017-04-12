@@ -50,6 +50,20 @@ a:hover{color:#0070A8}
 .search input{border:none!important;background: none!important;font-size: 1.4rem!important;}
 
 /*index_banner*/
+.banner {
+    /* position: relative; */
+    overflow: hidden;
+    text-align: center;
+    color: #eee;
+    height: 360px;
+    background: url(img/banner.jpg) center top no-repeat;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
 .index_banner{margin: -11px 0 0 0;border: none;box-shadow: none;overflow: hidden;.index_banner{margin: 0;border: none;box-shadow: none;overflow: hidden;background: #131721;}.index_banner{margin: 0;border: none;box-shadow: none;overflow: hidden;background: #131721;}background: #;background: #131721;}
 .index_banner  .am-slider-images{height: 760px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;-ms-background-size:cover;background-size:cover;background-position:center;background-repeat:no-repeat;color: #fff;}
 .index_banner .am-slider-desc{position: absolute;left: 0;top: 35%;right: 0;color: #eee;text-align: center;background: none;}
