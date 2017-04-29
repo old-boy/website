@@ -5,8 +5,9 @@ body{background: url(../images/bj.png)  #171B27 no-repeat center bottom;line-hei
 button,dl,dt,dd,ul,li,p{/* margin: 0; */padding: 0;border: none;outline: none;list-style: none;}
 .clear{clear: both}
 a{color:#aaa}
-a:hover{color:#0070A8}
-.bg_color{background: #00c0ff;color: #fff;}
+/*改变 a:hover{color:#0070A8} 为 a:hover{color:#0070A8}*/
+a:hover{color:#00dfb9}
+.bg_color{background: #00dfb9;color: #fff;}
 /*public*/
 .am-container{max-width: 1200px;padding: 0 .8rem;}
 .contents_about{padding: 0px 0px 50px;/* z-index: 1; */max-width: 1200px;margin: -5rem auto 0;overflow: hidden;/* background: #333; */}
@@ -18,35 +19,46 @@ a:hover{color:#0070A8}
 .head{overflow:hidden;/* height:60px; */}
 .head .am-slides li{cursor: pointer;}
 .head .am-topbar-btn{margin-top: 14px;background: #33394E;color: #eee;}
+/*鼠标选中的背景色由#00c0ff更换为#00dfb9*/
+/*boder 背景色由#00c0ff更换为#00dfb9*/
 .head .am-nav > li.am-active > a,
 .head .am-nav > li.am-active > a:focus,
-.head .am-nav > li.am-active > a:hover{background-color: #00c0ff;}
+.head .am-nav > li.am-active > a:hover{background-color: #00dfb9;}
 .head .am-slider-default .am-direction-nav .am-prev{left: -56px;}
 .head .am-slider-default .am-direction-nav .am-next{right: -56px;}
 .head .am-slider-default .am-direction-nav a.am-next:before{content: "\f054"; color: #dedede;}
 .head .am-slider-default .am-direction-nav a:before{content: "\f053"; color: #dedede;}
-.head .am-slider-default .am-control-nav li a{background: #ececed; -webkit-box-shadow: none; box-shadow: none;}
-.head .am-slider-default .am-control-nav li a:hover{background: #00c0ff;}
-.head .am-slider-default .am-control-nav li a.am-active{background: #00c0ff; -webkit-box-shadow: none; box-shadow: none;}
+.head .am-slider-default .am-control-nav li a{background: #00dfb9; -webkit-box-shadow: none; box-shadow: none;}
+.head .am-slider-default .am-control-nav li a:hover{background: #00dfb9;}
+.head .am-slider-default .am-control-nav li a.am-active{background: #00dfb9; -webkit-box-shadow: none; box-shadow: none;}
 .head .am-topbar{background: #0A0E1B;border: none;min-height: 60px;}
 .head .am-topbar-nav > li.am-active > a,
 .head .am-topbar-nav > li.am-active > a:focus,
-.head .am-topbar-nav > li.am-active > a:hover{color: #fff; background: #00c0ff;}
+.head .am-topbar-nav > li.am-active > a:hover{color: #fff; background: #00dfb9;}
 .head .am-nav > li > a:focus,
-.head .am-nav > li > a:hover{background: none; color: #fff;border-bottom:2px solid #00c0ff}
+.head .am-nav > li > a:hover{background: none; color: #fff;border-bottom:2px solid #00dfb9}
 .head .am-topbar-nav > li > a:after{display:none}
 .head .am-topbar-nav > li > a{font-size: 14px; padding: 0 20px; height: 60px; line-height: 60px;}
 .head .am-topbar-collapse{padding: 0;float: right;/* overflow: hidden; */}
 .head .app-logo{height: 60px;line-height: 60px;padding: 0;float: left;}
 .head .app-logo a{padding-right: 38px; border-right: 1px solid #414345; display: inline-block; height: 28px; vertical-align: middle; margin-right: 20px;}
-.head .app-logo img{width: 150px; height: 28px; display: block; vertical-align: middle;}
+/*.head .app-logo img{width: 150px; height: 28px; display: block; vertical-align: middle;}*/
+.head .app-logo img{
+	width: 130px;
+    height: 46px;
+    display: block;
+    vertical-align: middle;
+    position: relative;
+    top: -12px;
+    }
 .head .app-ov{overflow: hidden;}
 
 /*search*/
 .search{overflow:hidden;/* padding: 1.2rem 0 0; */}
 .search form{overflow:hidden;width: 70%;border: 1px solid #2E343E!important;background: #232837!important;margin: 1.2rem 0 0;}
 .search form:hover{border:1px solid #08c; color: #000;}
-.search button{color: #00C0FF;border:none;background:none;margin:0;padding:0;}
+/*search btn color由#00C0FF 更改为 #00dfb9*/
+.search button{color: #00dfb9;border:none;background:none;margin:0;padding:0;}
 .search input{border:none!important;background: none!important;font-size: 1.4rem!important;}
 
 /*index_banner*/
@@ -64,6 +76,30 @@ a:hover{color:#0070A8}
     background-size: cover;
     width: 100%;
 }
+.am-login{
+	margin: 10%;
+}
+.am-login .am-input input[type]{
+	border-radius: 4px;
+    background: #242a3c;
+    border: 1px solid #333;
+}
+.am-login .am-input:focus{
+	border: 1px solid #00dfb9;
+}
+.am-login .am-login-panel{
+	border: 1px solid #333;
+}
+.am-login .am-forget{
+	position: relative;
+    top: 13px;
+    left: 20px;
+    cursor: pointer;
+}
+.am-login .am-forget:hover{
+	color: #666;
+}
+
 .index_banner{margin: -11px 0 0 0;border: none;box-shadow: none;overflow: hidden;.index_banner{margin: 0;border: none;box-shadow: none;overflow: hidden;background: #131721;}.index_banner{margin: 0;border: none;box-shadow: none;overflow: hidden;background: #131721;}background: #;background: #131721;}
 .index_banner  .am-slider-images{height: 760px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;-ms-background-size:cover;background-size:cover;background-position:center;background-repeat:no-repeat;color: #fff;}
 .index_banner .am-slider-desc{position: absolute;left: 0;top: 35%;right: 0;color: #eee;text-align: center;background: none;}
@@ -81,8 +117,16 @@ a:hover{color:#0070A8}
 .index_banner  .am-slider-images a:hover{-moz-transform:translate3d(0,-2px,0);-webkit-transform:translate3d(0,-2px,0);-ms-transform:translate3d(0,-2px,0);-o-transform:translate3d(0,-2px,0);transform:translate3d(0,-2px,0);-moz-box-shadow:0 15px 30px rgba(0,0,0,.1);-webkit-box-shadow:0 15px 30px rgba(0,0,0,.1);-ms-box-shadow:0 15px 30px rgba(0,0,0,.1);-o-box-shadow:0 15px 30px rgba(0,0,0,.1);box-shadow:0 15px 30px rgba(0,0,0,.1)}
 .index_banner .am-control-nav{bottom: 15px;}
 .index_banner .am-control-nav li a{border-radius: 0;/* width: 20px; */}
-.index_banner .am-control-nav li a.am-active{background: #00C0FF;}
+/*滚动条颜色由 #00C0FF 更改为 #00dfb9*/
+.index_banner .am-control-nav li a.am-active{background: #00dfb9;}
 
+.index_banner .am-img-opacity{
+	opacity: 0.4;
+}
+.index_banner .am-bannel-info{
+	width: 400px;
+	margin: 0 auto;
+}
 
 @media screen and (min-width: 960px) and (max-width: 1199px){
 .index_banner  .am-slider-images{height:680px;}
@@ -140,8 +184,9 @@ a:hover{color:#0070A8}
 .nav_son{/* -webkit-box-shadow:0 8px 30px rgba(0,0,0,.08); *//* box-shadow:2px 8px 30px rgba(0,0,0,.08); *//* padding: 0 2rem; *//* background: #eee; */overflow: hidden;margin: 1rem 0 2rem;/* z-index: 9999; */}
 .nav_son .title_h2{padding:1.4rem 0;font-size: 1.6rem;text-align:center;background: #00C0FF;margin: 0 .5rem;color: #fff;font-weight: normal;}
 .nav_son ul{/* border: 1px solid #eee; *//* border-bottom: none; *//* -webkit-box-shadow: 0 8px 30px rgba(0,0,0,.08); *//* box-shadow:2px 8px 30px rgba(0,0,0,.08); */overflow: hidden;}
-.nav_son li.am-active a{color: #fff;background: #00C0FF;/* font-weight: 600; */}
-.nav_son li a:hover{background: #00C0FF;color: #FFF;}
+.nav_son li.am-active a{color: #fff;background: #00dfb9;/* font-weight: 600; */}
+
+.nav_son li a:hover{background: #00dfb9;color: #FFF;}
 .nav_son li {/* font-size:1.4rem; */display:block;/* transition:all 1.2s; */-moz-transition:all 1.2s;/* -webkit-transition:all 1.2s; */-o-transition:all 1.2s;/* border-bottom: 1px solid #dedede; */padding: .5rem;/* background: #fff; *//* border-right: 1px solid #dedede;*//* color: #00C0FF;*//* padding: 1rem; */}
 .nav_son li a{font-size:1.4rem;display:block;transition:all 1.2s;-moz-transition:all 1.2s;-webkit-transition:all 1.2s;-o-transition:all 1.2s;/* border-bottom: 1px solid #dedede; */padding: .8rem 0;background: #080E1A;/* border-right: 1px solid #dedede;*/color: #aaa;opacity: .9;}
 .nav_son li i{padding:0 0 0 10px}
@@ -157,9 +202,9 @@ a:hover{color:#0070A8}
 .service li p{font-size: 1.2rem;}
 .service li a:hover img{transform:scale(1.1);-moz-transform:scale(1.1);-webkit-transform:scale(1.1);-o-transform:scale(1.1);-ms-transform:scale(1.1);border-radius:0px;}
 
-.bg4{background: #0A0E1B;}
-.bg3{background: #131721;}
-.bg2{background: #1B1F2B;}
+.bg4{background: #232837;}
+.bg3{background: #232837;}
+.bg2{background: #232837;}
 .bg1{background: #232837;}
 
 .bg5{background: #0A0E1B;}
@@ -184,25 +229,47 @@ a:hover{color:#0070A8}
 .case li dt{/* padding:1rem; */max-height: 300px;overflow:hidden;text-align:center;/* border-bottom:1px solid #eee; */}
 .case li dt img{width:100%;/* height: 200px; */transition:all 1.2s;-moz-transition:all 1.2s;-webkit-transition:all 1.2s;-o-transition:all 1.2s;}
 .case li a{background: #242938;display:block;overflow: hidden;-moz-transition:all 1.2s;-webkit-transition:all 1.2s;-o-transition:all 1.2s;}
-.case li dt img:hover{transform:scale(1);-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);border-radius:0}
+.case li div{
+	background: #242938;display:block;overflow: hidden;-moz-transition:all 1.2s;-webkit-transition:all 1.2s;-o-transition:all 1.2s;
+}
+.case li dt img:hover{transform:scale(1);-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);border-radius:0;cursor: pointer;}
+
 .case a:hover{-webkit-box-shadow:0 2px 1px rgba(0,0,0,.2);box-shadow:0 2px 10px rgba(0,0,0,.2);-webkit-transform:translate3d(0,-2px,0);transform:translate3d(0,-2px,0)}
 .case  li h3{border-bottom: 1px solid #32394E;padding: 1.5rem 1rem;margin: 0;font-weight: normal;color: #aaa;/* font-size: 1.6rem; */}
+.case  li h3:hover{
+	color: #00dfb9;
+	cursor: pointer;
+}
 .case  li p{font-size:1.2rem;padding: 1rem;margin: 0;color: #888;}
 .case  li span{font-size: 1.2rem;padding: 0 1rem 0 0;}
 .case  li p.color {color: #4E5775;}
+.case button{
+	margin: 10px auto;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+    display: flex;
+}
+.case .am-btn-success{
+	color: #fff;
+    background-color: #00dfb9;
+    border-color: #00dfb9;
+    font-size: 12px;
+}
+
 
 
 
 /*about*/
 .about{overflow:hidden;width:100%;/* background: url(../images/about_bj.png) #f5f5f5 no-repeat  center bottom; */padding: 30px 0;background-attachment: fixed;/* background-size: cover; */color: #aaa;}
 .about_img {overflow:hidden;padding:0;}
-.about_img img{max-width:100%;}
+.about_img img{max-width:100%;border: 4px solid #fff;}
 .about_text {padding:0;overflow:hidden;}
 .about_text h3{font-size:2rem;font-weight:normal;margin: 1.5rem 0;}
 .about_text p{padding:0;/* margin:0; */font-size:1.4rem;}
 a.more{font-size:1.2rem;margin:1rem 0;color: #00C0FF;display:block;}
-
-
 
 
 /*contact*/
@@ -226,8 +293,6 @@ a.more{font-size:1.2rem;margin:1rem 0;color: #00C0FF;display:block;}
 .news_fl  li span{font-size:1rem;padding: 0 1rem 0 0;}
 
 /*news_fr*/
-
-
 
 .news_fr{/* float: right; *//* background: #fff; */overflow: hidden;padding: 20px;}
 .news_fr li{border-bottom: 1px solid #242938;padding: 2rem 0;overflow:hidden;}
